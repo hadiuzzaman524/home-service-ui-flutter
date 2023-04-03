@@ -1,0 +1,62 @@
+name: ar_products_flutter
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  ar_flutter_plugin: ^0.7.3
+  auto_route: ^5.0.4
+  animated_bottom_navigation_bar: ^1.2.0
+  bloc: ^8.1.1
+  cached_network_image: ^3.2.3
+  cloud_firestore: ^4.4.3
+  dio:
+  firebase_analytics: 
+  firebase_core: ^2.7.0
+  flutter:
+    sdk: flutter
+ 
+  flutter_bloc: ^8.1.1
+  flutter_localizations:
+    sdk: flutter
+  freezed: ^2.3.2
+  get_it:
+  google_fonts: ^4.0.3
+  injectable:
+  intl: ^0.17.0
+  json_serializable: ^6.6.1
+  modal_bottom_sheet:
+  path_provider: ^2.0.3
+  retrofit:
+  shimmer: ^2.0.0
+  vector_math:
+
+dev_dependencies:
+  auto_route_generator:
+  bloc_test: ^9.1.0
+  build_runner:
+  flutter_gen_runner: ^5.0.3
+  flutter_test:
+    sdk: flutter
+  freezed_annotation:
+  injectable_generator:
+  json_annotation:
+  mocktail: ^0.3.0
+  retrofit_generator:
+  very_good_analysis: ^4.0.0+1
+
+
+flutter_gen:
+  line_length: 80
+
+  integrations:
+    flutter_svg: true
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/

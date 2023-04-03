@@ -1,0 +1,18 @@
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "appName": "QuickFIX",
+    "product1Name": "Product 1 (Local Object)",
+    "product2Name": "Product 2 (Network Object)",
+    "welcomeText": "Good Morning",
+    "searchText": "Search",
+    "categoryText": "Category",
+    "popularText": "Most Popular",
+    "productText": "All Products",
+    "viewDetailsButtonText": "View Details",
+    "viewARButtonText": "View In AR",
+    "noDataText": "No Data Available"
+}
