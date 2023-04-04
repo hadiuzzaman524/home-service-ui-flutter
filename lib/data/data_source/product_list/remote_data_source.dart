@@ -1,7 +1,5 @@
 import 'package:ar_products_flutter/domain/entities/product_list/category.dart';
 import 'package:ar_products_flutter/domain/entities/product_list/products.dart';
-import 'package:ar_products_flutter/resource/constants.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
@@ -14,7 +12,7 @@ class FirebaseRemoteDataSource {
     return [
       Product(
           title: "House Cleaning",
-          id: "2",
+          id: "1",
           category: "Cleaning",
           description: text,
           imageUrl:
@@ -30,7 +28,7 @@ class FirebaseRemoteDataSource {
           isMostPopular: true),
       Product(
           title: "Home Reparing",
-          id: "2",
+          id: "3",
           category: "Reparing",
           description: text,
           imageUrl:
@@ -38,7 +36,7 @@ class FirebaseRemoteDataSource {
           isMostPopular: false),
       Product(
           title: "Phone Reparing",
-          id: "2",
+          id: "4",
           category: "Reparing",
           description: text,
           imageUrl:
@@ -46,7 +44,7 @@ class FirebaseRemoteDataSource {
           isMostPopular: true),
       Product(
           title: "Home Painting",
-          id: "2",
+          id: "5",
           category: "Painting",
           description: text,
           imageUrl:
@@ -54,7 +52,7 @@ class FirebaseRemoteDataSource {
           isMostPopular: true),
       Product(
           title: "Food Delivery",
-          id: "2",
+          id: "6",
           category: "Delivery",
           description: text,
           imageUrl:

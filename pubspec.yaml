@@ -7,15 +7,15 @@ environment:
   sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
-  ar_flutter_plugin: ^0.7.3
+
   auto_route: ^5.0.4
   animated_bottom_navigation_bar: ^1.2.0
   bloc: ^8.1.1
   cached_network_image: ^3.2.3
-  cloud_firestore: ^4.4.3
+
   dio:
   firebase_analytics: 
-  firebase_core: ^2.7.0
+
   flutter:
     sdk: flutter
  
@@ -26,10 +26,10 @@ dependencies:
   get_it:
   google_fonts: ^4.0.3
   injectable:
-  intl: ^0.17.0
+
   json_serializable: ^6.6.1
   modal_bottom_sheet:
-  path_provider: ^2.0.3
+
   retrofit:
   shimmer: ^2.0.0
   vector_math:

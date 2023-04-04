@@ -7,20 +7,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ProductCategoryCard extends StatelessWidget {
-  const ProductCategoryCard({
-    super.key,
-    required this.icon,
-    required this.title,
-    required this.onTap,
-    required this.isSelected,
-    required this.color,
-  });
+  const ProductCategoryCard(
+      {super.key,
+      required this.icon,
+      required this.title,
+      required this.onTap,
+      required this.isSelected,
+      required this.color,
+      required this.small});
 
   final IconData icon;
   final String title;
   final bool isSelected;
   final VoidCallback onTap;
   final Color color;
+  final bool small;
 
   String capitalize(String value) {
     var result = value[0].toUpperCase();
@@ -38,32 +39,55 @@ class ProductCategoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      child: Card(
-        elevation: 4,
-        color: isSelected
-            ? context.colors.selectedCardColor
-            : color,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(AppConstants.borderRadius),
-          ),
-        ),
-        child: SizedBox(
-          height: 130,
-          width: 110,
-          //padding: const EdgeInsets.all(8),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-             Icon(icon, size: 50,),
-              const SizedBox(height: 8),
-              AppText.bodyMedium(text: capitalize(title)),
-            ],
-          ),
-        ),
-      ),
-    );
+    return small
+        ? InkWell(
+            onTap: onTap,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+              decoration: BoxDecoration(
+                color:
+                    isSelected ? const Color(0xff593EFC) : Colors.transparent,
+                borderRadius: const BorderRadius.all(Radius.circular(16)),
+                border: isSelected
+                    ? null
+                    : Border.all(color: Colors.grey, width: 2),
+              ),
+              child: Center(
+                child: Text(
+                  title,
+                  style: TextStyle(
+                      color: isSelected ? Colors.white : Colors.black45),
+                ),
+              ),
+            ),
+          )
+        : InkWell(
+            onTap: onTap,
+            child: Card(
+              elevation: 4,
+              color: isSelected ? context.colors.selectedCardColor : color,
+              shape: const RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(AppConstants.borderRadius),
+                ),
+              ),
+              child: SizedBox(
+                height: 130,
+                width: 110,
+                //padding: const EdgeInsets.all(8),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      icon,
+                      size: 50,
+                    ),
+                    const SizedBox(height: 8),
+                    AppText.bodyMedium(text: capitalize(title)),
+                  ],
+                ),
+              ),
+            ),
+          );
   }
 }

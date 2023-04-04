@@ -24,6 +24,7 @@ class CategoryShimmer extends StatelessWidget {
                 children: [
                   const SizedBox(width: AppConstants.padding),
                   ProductCategoryCard(
+                    small: false,
                     color: Colors.red,
                     icon:Icons.add, //DummyAssetPath.avaterImageUrl,
                     title: 'title',
@@ -34,6 +35,7 @@ class CategoryShimmer extends StatelessWidget {
               );
             }
             return ProductCategoryCard(
+              small: false,
               //iconUrl: DummyAssetPath.avaterImageUrl,
               icon:Icons.add,
               title: 'title',

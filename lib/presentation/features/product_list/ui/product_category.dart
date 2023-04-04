@@ -10,7 +10,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ProductCategory extends StatefulWidget {
-  const ProductCategory({super.key});
+  const ProductCategory({
+    super.key,
+    required this.small,
+  });
+
+  final bool small;
 
   @override
   State<ProductCategory> createState() => _ProductCategoryState();
@@ -51,7 +56,7 @@ class _ProductCategoryState extends State<ProductCategory> {
             );
           }
           return SizedBox(
-            height: 130,
+            height:widget. small? 40: 130,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               physics: const BouncingScrollPhysics(),
@@ -61,6 +66,7 @@ class _ProductCategoryState extends State<ProductCategory> {
                     children: [
                       const SizedBox(width: AppConstants.padding),
                       ProductCategoryCard(
+                        small: widget.small,
                         color: categoryList[index].color,
                         icon: categoryList[index].iconUrl,
                         title: categoryList[index].title,
@@ -77,6 +83,7 @@ class _ProductCategoryState extends State<ProductCategory> {
                   );
                 }
                 return ProductCategoryCard(
+                  small: widget.small,
                   icon: categoryList[index].iconUrl,
                   color: categoryList[index].color,
                   title: categoryList[index].title,
@@ -97,7 +104,7 @@ class _ProductCategoryState extends State<ProductCategory> {
             ),
           );
         }
-        return const SizedBox(
+        return  const SizedBox(
           height: 130,
           child: CategoryShimmer(),
         );
