@@ -1,4 +1,4 @@
-# On-Demand Home Service UI Design
+# Home Service UI Design
 
 Inspired by: [Dribble](https://dribbble.com/shots/19519599-On-demand-Home-Service-App)
 <p float='left'>
