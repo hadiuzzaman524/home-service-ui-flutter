@@ -1,6 +1,9 @@
-# Home Service UI Design
+# Home Service UI
 
+ This Flutter project showcases a visually appealing user interface inspired by Dribbble for a home service application. The design incorporates modern and intuitive elements to enhance the user experience
+ 
 Inspired by: [Dribble](https://dribbble.com/shots/19519599-On-demand-Home-Service-App)
+
 <p float='left'>
 <img src="https://github.com/hadiuzzaman524/On-demand-Home-Service-UI-design/assets/52348628/92daa330-d43c-4d8b-b168-8d14a83f5c86" width="160" />
 <img src="https://github.com/hadiuzzaman524/On-demand-Home-Service-UI-design/assets/52348628/61a871f5-55ae-4b30-8693-21c826c0d4e9" width="160" />
